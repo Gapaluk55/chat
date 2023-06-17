@@ -4,7 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server"
+    },
+  "engines": {
+    "node": "14.x"
+  },
   },
   "repository": {
     "type": "git",
@@ -21,15 +26,12 @@
   },
   "homepage": "https://github.com/Gapaluk55/chat#readme",
   "dependencies": {
+    "crypto": "^1.0.1",
     "socket.io": "^4.6.1",
     "sqlite": "^4.2.0",
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server"
   }
 }
